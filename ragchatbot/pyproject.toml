@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ragchatbot"
+version = "0.1.0"
+description = ""
+authors = ["Abhinav Dayal <abhinav@enligence.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.2.14"
+langchain-openai = "^0.1.22"
+langchain-community = "^0.2.12"
+chainlit = "^1.1.402"
+pymupdf = "^1.24.9"
+chromadb = "^0.5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
