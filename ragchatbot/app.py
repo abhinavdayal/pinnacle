@@ -75,14 +75,14 @@ async def when_chat_starts():
 
     # Create a prompt template for QA RAG System
     qa_template = """
-                Use only the following pieces of context to answer the question at the end.
-                If you don't know the answer, just say that you don't know,
-                don't try to make up an answer. Keep the answer as concise as possible.
+Use only the following pieces of context to answer the question at the end.
+If you don't know the answer, just say that you don't know,
+don't try to make up an answer. Keep the answer as concise as possible.
 
-                {context}
+{context}
 
-                Question: {question}
-                """
+Question: {question}
+"""
     qa_prompt = ChatPromptTemplate.from_template(qa_template)
 
     # This function formats retrieved documents before sending to LLM
